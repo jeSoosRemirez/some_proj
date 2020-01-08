@@ -1,7 +1,7 @@
 import json
 
 
-def contactadd(self):
+def contactadd():
     name = str(input('Type name of your friend: '))
     phonenum = int(input('Type phone number: '))
     contacts = {name: phonenum}
@@ -9,4 +9,4 @@ def contactadd(self):
         file.write(json.dumps(contacts))
 
 
-contactadd(self=1)
+contactadd()
